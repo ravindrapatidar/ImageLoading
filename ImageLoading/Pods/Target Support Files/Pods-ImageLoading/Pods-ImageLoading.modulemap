@@ -1,0 +1,6 @@
+framework module Pods_ImageLoading {
+  umbrella header "Pods-ImageLoading-umbrella.h"
+
+  export *
+  module * { export * }
+}
