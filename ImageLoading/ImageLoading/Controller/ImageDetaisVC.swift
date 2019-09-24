@@ -1,9 +1,9 @@
 //
 //  ImageDetaisVC.swift
-//  testHttpreq
+//  ImageLoading
 //
-//  Created by ABD on 12/03/2019.
-//  Copyright © 2019 ABD. All rights reserved.
+//  Created by Ravindra Patidar on 23/09/19.
+//  Copyright © 2019 Ravindra Patidar. All rights reserved.
 //
 
 import UIKit

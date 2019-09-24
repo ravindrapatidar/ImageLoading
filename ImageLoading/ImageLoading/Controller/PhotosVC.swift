@@ -1,9 +1,9 @@
 //
 //  PhotosVC.swift
-//  testHttpreq
+//  ImageLoading
 //
-//  Created by ABD on 09/03/2019.
-//  Copyright © 2019 ABD. All rights reserved.
+//  Created by Ravindra Patidar on 23/09/19.
+//  Copyright © 2019 Ravindra Patidar. All rights reserved.
 //
 
 import UIKit
@@ -197,7 +197,8 @@ class PhotosVC : UIViewController {
             if  cell.imageView.image == self.imageHolder {
                 
                 let url = URL(string: self.photoArray[indexPath.item].regular )
-                cell.imageView.sd_setImage(with: url, placeholderImage: nil, options: [.fromCacheOnly, .progressiveLoad], completed: nil)
+                
+             cell.imageView.sd_setImage(with: url, placeholderImage: nil, options: [.cacheMemoryOnly, .progressiveDownload], completed: nil)
                 
             } else {
                 //message for the user  presented by AlertView
@@ -296,7 +297,9 @@ extension  PhotosVC : UICollectionViewDataSource, UICollectionViewDelegate{
         } else {
             let url = URL(string: self.photoArray[indexPath.item].regular )
             
-            cell.imageView.sd_setImage(with: url, placeholderImage: nil, options: [.fromCacheOnly, .progressiveLoad], completed: nil)
+           // cell.imageView.sd_setImage(with: url, placeholderImage: nil, options: [.ca, .progressiveLoad], completed: nil)
+            cell.imageView.sd_setImage(with: url, placeholderImage: nil, options: [.cacheMemoryOnly, .progressiveDownload], completed: nil)
+            
         }
         /* you can notice i used SDWebImage as default image downloader because it's so simple and efficase to download image from internet but i can use my downloader image extention for exemple : */
       // DOWNLOAD IMAGE WITHOUT SDWEBimage

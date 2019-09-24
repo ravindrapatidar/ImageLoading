@@ -1,9 +1,10 @@
 //
 //  ZoomTransitioningDelegate.swift
 // 
+//  ImageLoading
 //
-//  Created by Duc Tran on 2/22/17.
-//  Copyright © 2017 Developers Academy. All rights reserved.
+//  Created by Ravindra Patidar on 23/09/19.
+//  Copyright © 2019 Ravindra Patidar. All rights reserved.
 //
 
 import UIKit
